@@ -11,12 +11,12 @@
                 <label>日期范围：</label>
                 <RangePicker v-model:value="dateRange" value-format="YYYY-MM-DD" style="min-width: 240px" />
             </div>
-            <Button type="primary" @click="handleSearch">
+            <!-- <Button type="primary" @click="handleSearch">
                 <template #icon>
                     <SearchOutlined />
                 </template>
                 查询
-            </Button>
+            </Button> -->
             <Button @click="handleReset">重置</Button>
         </div>
         <!-- Chart Body -->
@@ -86,8 +86,8 @@ const searchParams = ref({
 const cellWidth = 40; // 每个格子的宽度
 const dateRange = ref([searchParams.value.startDate, searchParams.value.endDate]);
 const collapsedUsers = ref(new Set()); // 用于存储折叠的用户
-const hoveredRowIndex = ref(null);
-const hoveredColIndex = ref(null);
+const hoveredRowIndex = ref(null); // 用于存储悬停的行索引
+const hoveredColIndex = ref(null); // 用于存储悬停的列索引
 
 const handleReset = () => {
     searchParams.value.members = [];
@@ -104,6 +104,7 @@ const memberOptions = computed(() => {
     }));
 });
 
+// 监听日期范围变化，更新搜索参数
 watch(dateRange, (val) => {
   if (val && val.length === 2) {
     searchParams.value.startDate = val[0];
@@ -149,7 +150,7 @@ const monthData = computed(()=>{
         } 
         acc[momthKey].days += 1;
         return acc
-    })
+    },{})
     return Object.values(monthMp)
 })
 
