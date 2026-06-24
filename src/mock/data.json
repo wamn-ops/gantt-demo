@@ -45,6 +45,22 @@
         { "id": 501, "title": "自动化测试框架搭建", "startDate": "2026-09-04", "endDate": "2026-09-12", "progress": 90 },
         { "id": 502, "title": "安全漏洞扫描与修复", "startDate": "2026-09-13", "endDate": "2026-09-20", "progress": 40 }
       ]
+    },
+    {
+      "id": 6,
+      "name": "刘思涵",
+      "tasks": [
+        { "id": 601, "title": "用户行为分析与数据可视化", "startDate": "2026-09-05", "endDate": "2026-09-15", "progress": 75 },
+        { "id": 602, "title": "A/B 测试与实验设计", "startDate": "2026-09-16", "endDate": "2026-09-25", "progress": 30 }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "赵子涵",
+      "tasks": [
+        { "id": 701, "title": "第三方服务集成与调试", "startDate": "2026-09-06", "endDate": "2026-09-14", "progress": 85 },
+        { "id": 702, "title": "日志系统搭建与监控配置", "startDate": "2026-09-15", "endDate": "2026-09-22", "progress": 50 }
+      ]
     }
   ]
 }

@@ -130,7 +130,7 @@ const dateData = computed(()=>{
             day: currentDate.getDate(),
             month: currentDate.getMonth() + 1,
             year: currentDate.getFullYear(),
-            dateStr: currentDate.toISOString().split('T')[0]
+            dateStr: currentDate.toISOString().split('T')[0] // 格式化为 YYYY-MM-DD
         })
         currentDate.setDate(currentDate.getDate() + 1)
     }
@@ -269,7 +269,7 @@ onMounted(async () => {
 .chart-inner{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
 .chart-head{
     position: sticky; /* sticky 表示 */
@@ -314,7 +314,7 @@ onMounted(async () => {
 .data-username{
   position: sticky;
   left: 0;
-  z-index: 9;
+  z-index: 8;/*  确保用户名列不会在表头上*/
   flex-shrink: 0;
   font-size: 13px;
   font-weight: 500;
