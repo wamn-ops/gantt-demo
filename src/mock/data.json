@@ -35,7 +35,8 @@
       "tasks": [
         { "id": 401, "title": "移动端适配与响应式布局", "startDate": "2026-09-03", "endDate": "2026-09-08", "progress": 100 },
         { "id": 402, "title": "性能优化与首屏加载提速", "startDate": "2026-09-11", "endDate": "2026-09-19", "progress": 55 },
-        { "id": 403, "title": "部署流水线与 CI/CD 配置", "startDate": "2026-09-20", "endDate": "2026-09-30", "progress": 15 }
+        { "id": 403, "title": "部署流水线与 CI/CD 配置", "startDate": "2026-09-20", "endDate": "2026-09-30", "progress": 15 },
+        { "id": 404, "title": "用户体验调研与改进方案", "startDate": "2026-09-25", "endDate": "2026-10-05", "progress": 0 }
       ]
     },
     {
